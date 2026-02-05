@@ -25,6 +25,11 @@ body {
   line-height: 1.6;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Header & Nav */
 header {
   background-color: var(--header-bg);
@@ -71,6 +76,8 @@ nav a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 600;
+  padding: 0.5rem;
+  display: inline-block;
   transition: color 0.3s;
 }
 
@@ -147,7 +154,7 @@ nav a.active {
 
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -178,7 +185,7 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
